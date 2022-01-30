@@ -1,9 +1,11 @@
 ﻿using LeaveManagmentWeb.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace LeaveManagmentWeb.Controllers
 {
+    
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -18,6 +20,7 @@ namespace LeaveManagmentWeb.Controllers
             return View();
         }
 
+       
         public IActionResult Privacy()
         {
             return View();
